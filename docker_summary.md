@@ -73,3 +73,26 @@ Docker服务
 - 启动Docker服务
 
     sudo service docker start
+启动一个docker 
+
+    docker run busybox echo "Hello, tengteng"
+
+### docker ps
+>docker ps 命令查看运行的容器列表
+
+*docker ps -a*查看所有的容器列表
+
+    teng@teng-E400 docker_learn (master) $ docker ps -a
+    CONTAINER ID        IMAGE               COMMAND                CREATED              STATUS                          PORTS               NAMES
+    c8d59f318e91        busybox:latest      "echo 'Hello, tengte   3 minutes ago        Exited (0) 3 minutes ago                            ecstatic_newton
+    54b0bd6aa70c        ubuntu:latest       "/bin/bash"            2 weeks ago          Exited (0) 2 weeks ago                              stoic_lalande
+    0893cbc2c4c0        ubuntu:latest       "/bin/bash"            2 weeks ago          Exited (0) 2 weeks ago                              clever_lalande
+    3ddb76df9579        ubuntu:latest       "/bin/bash"            5 weeks ago          Exited (0) 5 weeks ago                              shiyanlou
+    b11b6b268e35        ubuntu:latest       "/bin/bash"            5 weeks ago          Exited (0) 5 weeks ago                              shiyanlouro
+    95f741f7256f        shiyanlou:1.0       "/bin/bash"            5 weeks ago          Exited (0) 5 weeks ago                              romantic_stallman
+    2c8783bea21f        ubuntu:latest       "/bin/bash"            5 weeks ago          Exited (0) 5 weeks ago                              pensive_poitras
+    67f9f37f7ba7        ubuntu:latest       "/bin/bash"            5 weeks ago          Exited (127) 5 weeks ago                            stupefied_leakey
+    e0b3546bc98d        ubuntu:latest       "/bin/bash"            5 weeks ago          Exited (0) 5 weeks ago                              modest_wilson
+    8aa205a49ad6        ubuntu:latest       "/bin/bash"            5 weeks ago          Exited (0) 5 weeks ago                              jolly_yalow
+    cf34776c7bca        ubuntu:latest       "echo 你好"              2.509286 years ago   Exited (0) 2.509286 years ago                       silly_mccarthy
+    34812a84789a        ubuntu:latest       "echo 你好"              2.509293 years ago   Exited (0) 2.509293 years ago                       sharp_mayer
