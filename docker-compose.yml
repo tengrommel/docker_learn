@@ -1,0 +1,17 @@
+verson: 1
+nginx:
+  image: nginx
+  ports:
+    - "80:80"
+  volumes:
+    - $PWD/nginx: /etc/nginx/sites-enabled
+  restart: always
+
+
+node:
+  images: node
+  ports:
+    - "8000:8000"
+  volumes:
+    - $PWD/node:/src/app
+  restart: always
