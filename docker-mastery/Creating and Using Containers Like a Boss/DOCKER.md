@@ -1,0 +1,10 @@
+# Check versions of our docker cli and engine   
+
+    docker version
+
+    docker info
+
+# Create a Nginx(web server) container
+# Learn common container management commands
+# Learn Docker networking basics
+# Requirements: Have latest Docker installed from last Section
