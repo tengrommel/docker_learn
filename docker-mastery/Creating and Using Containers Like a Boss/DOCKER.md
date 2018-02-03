@@ -17,3 +17,9 @@
     - Docker's default image "registry" is called Docker Hub(hub.docker.com)
 - run/stop/remove containers
 - check container logs and processes
+
+sudo docker container run --publish 80:80 nginx
+sudo docker container run --publish 80:80 --detach nginx
+sudo docker container stop eded8a359950199cb429b13a173567cec10d5e22325d9e7683d8f555522326b9
+sudo docker container ls -a
+sudo docker container logs webhost
