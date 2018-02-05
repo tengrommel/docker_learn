@@ -33,3 +33,25 @@
 - Create a network docker network create --driver
 - Attach a network to container docker network connect
 - Detach a network from container docker network disconnect
+
+# Docker Networks: DNS
+- Understand how DNS is the key to easy inter-container comms
+- See how it works by default with custom networks
+- Learn how to use --link to enable DNS on default bridge network
+
+**DNS default Names**
+>Docker defaults the hostname to the container's name,but you can also set aliases  
+
+- Containers shouldn't rely on IP's for inter-communication
+- DNS for friendly names is built-in if you use custom networks
+- Your using custom networks right?
+- This gets way easier with Docker Compose in future section
+
+# Assignment: CLI App Testing
+- Use different Linux distro containers to check curl cli tool version
+- Use two different terminal windows to start bash in both centos:7 and ubuntu:14.04,using -it
+- Learn the docker container --rm option so you can save cleanup
+- Ensure curl is installed and on latest version for that distro
+    - ubuntu:apt-get update && apt-get install curl
+    - centos:yum update curl
+- Check curl --version
